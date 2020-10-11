@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 import {Link} from 'react-router-dom';
  class Photo extends Component {
     render() {
-        // console.log(this.props.posts)
             const post=this.props.post
 
         return (
@@ -13,8 +12,6 @@ import {Link} from 'react-router-dom';
                 <figcaption><p>{post.description}</p></figcaption>
                 <div className="button-container">
                     <button className="remove-button" onClick={()=>{
-                    //    console.log(post)
-                    //    this.props.onRemovephoto(post)
                         this.props.removePost(this.props.index);
                     }}>Remove</button>
                 </div>
